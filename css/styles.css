@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap");
+:root {
+  --white: #fff;
+  --black: #000000;
+  --dark-gray: #333;
+  --spacing--sx: 2rem;
+  --spacing--sm: 2.5rem;
+}
+
+body {
+  background-color: var(--black) !important;
+  padding: 0;
+}
+
+/*Home*/
+.mainHome {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedorImagen {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: var(--spacing--sm);
+}
+
+.contenedorImagen__imagenPrincipal {
+  height: 15rem;
+  width: auto;
+}
+
+.logo {
+  width: 21rem;
+  margin: auto;
+}
+
+.navbar-width {
+  margin: 0 auto;
+  max-width: 1028px !important;
+}
+
+.navbar__logo {
+  height: var(--spacing--sx);
+  width: auto;
+  padding: 1rem 2rem 0 0;
+}
+
+.textContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.textContainer__mensaje--static {
+  display: none;
+}
+
+.textContainer__mensaje--move {
+  display: inline-block;
+  border-right: 0.1em solid #333;
+  margin: 0;
+  padding: 0 0.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+  animation: typing 5s steps(40, end) infinite;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.carContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  gap: var(--spacing--sx);
+}
+
+.footerContainer {
+  color: var(--white);
+  margin: auto;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.footerContainer__info a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.footerContainer__items {
+  list-style: none;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footerContainer__items a {
+  text-decoration: none;
+  color: var(--dark-gray);
+  align-items: center;
+}
+
+/*Sobre nosotros*/
+.introContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1028px !important;
+}
+
+.introContainer__img {
+  height: 15rem;
+  width: auto;
+}
+
+.introContainer__description {
+  width: 100%;
+  padding: 1.25rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.historia {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: var(--white);
+  padding: 1.25rem;
+  max-width: 1028px !important;
+}
+
+/*contacto*/
+.containerContact {
+  max-width: 600px !important;
+  margin: 0 auto;
+}
+
+.contactoContainer h1 {
+  color: var(--white);
+  padding-top: var(--spacing--sx);
+}
+
+/* Menus diarios */
+.ContainerMenu {
+  width: 100% !important;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  margin: 0 auto !important;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto !important;
+  padding: 5rem 2rem;
+}
+
+.cardsContainer__box {
+  width: 100% !important;
+  display: flex !important;
+  gap: 3rem;
+}
+
+.cardsContainer__img {
+  width: 15rem;
+  height: auto;
+}
+
+.ContainerMenu h1 {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--white) !important;
+}
+
+.ContainerMenu__p {
+  color: var(--white) !important;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-item {
+  color: var(--white);
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .contenedorImagen__imagenPrincipal {
+    height: 30rem;
+    width: auto;
+  }
+  .navbar__logo {
+    padding: 0rem 2rem 0 0;
+  }
+  .carContainer {
+    flex-direction: row;
+  }
+  .textContainer__mensaje--move {
+    display: none;
+  }
+  .textContainer__mensaje--static {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--spacing--sx);
+    color: var(--white);
+  }
+  .cardBox {
+    height: 25rem !important;
+  }
+  .carContainer {
+    gap: 4rem;
+  }
+  /*Sobre nosotros*/
+  .introContainer {
+    margin: 0 auto;
+  }
+  .introContainer__img {
+    height: 30rem;
+    width: auto;
+  }
+  .introContainer__description {
+    justify-content: flex-start;
+    text-align: left;
+    padding: 4rem 0;
+  }
+  .historia {
+    margin: 0 auto;
+    padding: 4rem 0;
+  }
+  /*Menus*/
+  .cardsContainer {
+    flex-direction: row;
+    width: 70rem;
+  }
+  .grid-item:nth-child(-n+4) {
+    grid-row: 1;
+  }
+  .grid-item:nth-child(n+5) {
+    grid-row: 2;
+  }
+}
+header {
+  text-align: center;
+}
+
+.texto {
+  color: var(--white);
+}
+
+.menu {
+  color: var(--white);
+}
+
+.customlink {
+  text-decoration: none;
+  padding: 0 0 20px;
+  color: var(--dark-gray);
+  font-weight: bold;
+}
+
+.fondo {
+  width: 500px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.label-style {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.reserva {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.reserva-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.link-container {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.sandwich {
+  width: 700px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  order: 1;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */
